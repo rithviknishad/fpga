@@ -6,7 +6,7 @@ module TFF_tb;
   
   integer i;
   
-  TFF tff(T, clk, reset, Q, Qb);
+  TFF uut(T, clk, reset, Q, Qb);
   
   initial begin
     $dumpfile("dump.vcd");
