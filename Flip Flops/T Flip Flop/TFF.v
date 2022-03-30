@@ -13,10 +13,10 @@ Truth table of T Flip Flop
 
 module TFF(
   input T,      // Toggle input
-  input clk, 	  // Clock Input
-  input reset, 	// Reset (Active High)
+  input clk,    // Clock Input
+  input reset,  // Reset (Active High)
   output reg Q, // Output of T Flip Flip
-  output Qb		  // Complimented output of T Flip Flop
+  output Qb     // Complimented output of T Flip Flop
 );
   // Initialize Q with 0
   initial Q = 0;
