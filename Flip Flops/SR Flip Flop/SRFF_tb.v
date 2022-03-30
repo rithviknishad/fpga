@@ -6,7 +6,7 @@ module SRFF_tb;
   
   integer i;
   
-  SRFF uut(S, R, Q, Qb);
+  SRFF uut(S, R, clk, Q, Qb);
   
   initial begin
     $dumpfile("dump.vcd");

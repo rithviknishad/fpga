@@ -28,7 +28,7 @@ module SRFF(
   
   // Whenever there is reset or rising edge in clock signal...
   always @(posedge clk) begin
-    if (S) Q = 1'b1;
-    if (R) Q = 1'b0;
+    if (S) Q <= 1'b1;
+    if (R) Q <= 1'b0;
   end
 endmodule

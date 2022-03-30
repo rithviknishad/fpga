@@ -27,5 +27,5 @@ module TFF(
   // Whenever there is reset or rising edge in clock signal...
   always @(posedge clk or reset)
     // ... Update Q
-    Q = reset ? 0 : (T ? ~Q : Q);
+    Q <= reset ? 0 : (T ? ~Q : Q);
 endmodule
