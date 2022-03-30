@@ -14,11 +14,11 @@ Truth table of SR Flip Flop
 */
 
 module SRFF(
-    input S,        // Set
-    input R,        // Reset
-    input clk,      // Clock
-    output reg Q,   // Output of SR Flip Flop
-    output Qb       // Complimented output of SR Flip Flop
+  input S,        // Set
+  input R,        // Reset
+  input clk,      // Clock
+  output reg Q,   // Output of SR Flip Flop
+  output Qb       // Complimented output of SR Flip Flop
 );
   // Initialize Q with 0
   initial Q = 0;
@@ -28,7 +28,7 @@ module SRFF(
   
   // Whenever there is reset or rising edge in clock signal...
   always @(posedge clk) begin
-      if (S) Q = 1'b1;
-      if (R) Q = 1'b0;
+    if (S) Q = 1'b1;
+    if (R) Q = 1'b0;
   end
 endmodule
