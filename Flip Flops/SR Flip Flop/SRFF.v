@@ -6,8 +6,8 @@ Truth table of SR Flip Flop
   S R     CLK     Q   Q`  Remarks
   ================================
   0 0   RISING    Q   Q`  retain
-  1 1   RISING    0   1   Set
-  1 1   RISING    1   0   Reset
+  1 1   RISING    0   1   Reset
+  1 1   RISING    1   0   Set
   1 1   RISING    ?   ?   INVALID
   x x   FALLING   Q   Q`  retain
 
