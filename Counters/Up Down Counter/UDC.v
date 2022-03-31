@@ -27,10 +27,6 @@ module UpDownCounter(
   initial out = 3'b000;
   
   // Whenever there is reset or rising edge in clock signal...
-  always @(posedge clk or reset) begin
-    if (reset)
-      out <= 3'b000;
-    else
-      out = out + (sel ? 1 : -1);
-  end
+  always @(posedge clk or reset)
+    out <= reset ? 0 : (out + (sel ? 1 : -1));
 endmodule
