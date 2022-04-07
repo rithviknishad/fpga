@@ -14,19 +14,15 @@ Truth table of JK Flip Flop
 */
 
 module JKFF(
-  input J,        // Set
-  input K,        // Reset
-  input clk,      // Clock
-  output reg Q,   // Output of JK Flip Flop
-  output Qb       // Complimented output of JK Flip Flop
+  input J,          // Set
+  input K,          // Reset
+  input clk,        // Clock
+  output reg Q,     // Output of JK Flip Flop
+  output Qb         // Complimented output of JK Flip Flop
 );
-  // Initialize Q with 0
-  initial Q = 0;
-  
-  // Assign Qb to always be compliment of Q.
-  assign Qb = ~Q;
-  
-  // Whenever there is reset or rising edge in clock signal...
+  initial Q = 0;    // Initialize Q with 0
+  assign Qb = ~Q;   // Assign Qb to always be compliment of Q.
+
   always @(posedge clk) begin
     if (J & K)
       Q <= ~Q;
